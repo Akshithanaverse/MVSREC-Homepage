@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <title> Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bakground">
+    <!-- Top Bar -->
+    <header class="sticy-header">
+        <div class="header">
+            <div class="left-header-part">
+                <div class="logo">
+                    <img src="/assets/logo.png">
+                </div>
+                <div class="clg-name" style="line-height: 1.4rem;">
+                    <p><b>Maturi Venkata Subba Rao Engineering College</b><br>(An Autonomous Institution)</p>
+
+                </div>
+            </div>
+            <div class="right-header-part">
+                <div class="toggle">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="menu-bar">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <!-- Checkbox input is no longer controlling the offcanvas toggle -->
+                        <label class="icon-menu" for="check-icon">
+                            <div class="bar bar--1"></div>
+                            <div class="bar bar--2"></div>
+                            <div class="bar bar--3"></div>
+                        </label>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+            style="width:100%;height:100%;">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><b>MVSREC<i class="fa-solid fa-list"></i> Key
+                        Links</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <br>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                About Us
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" style="justify-content: space-evenly;">
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Small button
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">About Institute</a></li>
+                                        <li><a class="dropdown-item" href="#">Founders</a></li>
+                                        <li><a class="dropdown-item" href="#">Chairman</a></li>
+                                        <li><a class="dropdown-item" href="#">Principal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Founders
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Founder Chairman</a></li>
+                                        <li><a class="dropdown-item" href="#">Secretary</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Chairman
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Message</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Principal
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Message</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Management
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Society
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Executive Council
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Committees
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Governing Body
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Administrations
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Principal
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Vice Principal
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Exam Branch
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Administrative Committees
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">ICC Cell</a></li>
+                                        <li><a class="dropdown-item" href="#">ST & ST Cell</a></li>
+                                        <li><a class="dropdown-item" href="#">IIP Cell</a></li>
+                                        <li><a class="dropdown-item" href="#">Grievance Committee</a></li>
+                                        <li><a class="dropdown-item" href="#">ED Cell</a></li>
+                                        <li><a class="dropdown-item" href="#">Anti Ragging Committee</a></li>
+                                        <li><a class="dropdown-item" href="#">Sports Committee</a></li>
+                                        <li><a class="dropdown-item" href="#">Women Protection Committee</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Departments
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Civil Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Computer Science and Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Electronics & Communication Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Electrical & Electronics Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Mechanical Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Information Technology
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Automobile Engineering
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Applied Sciences and Humanities
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        M.B.A
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty & Staff</a></li>
+                                        <li><a class="dropdown-item" href="#">Administrative Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratory</a></li>
+                                        <li><a class="dropdown-item" href="#">Univeristy Ranks</a></li>
+                                        <li><a class="dropdown-item" href="#">University Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Class Timetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Online Classwork</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Admissions
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        UG Admissions
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        PG Admissions
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Eligibility Conditions
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Fee Details
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        B.E Category-B Admissions
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Students
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Welfare
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Fuel
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SAE BAJA
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Student Club
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Digital Wellbeing Council
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        EBSB - Ek Bharat Shrestha Bharat
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        UBA - Unnat Bharat Abhiyan
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        NCC - National Cadet Corps
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        NSS - National Service Scheme
+
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SES REC
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Activity Statistics
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Academics
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Scholarships Section
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Academic Calendar
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Almanacs
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Syllabus
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Previous Question Papers
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        University Ranks
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Placements
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Training & Placement
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Department Details</a></li>
+                                        <li><a class="dropdown-item" href="#">HOD</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Companies
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Internships
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Industry Institute Interaction Cell - IIIC
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Industry Training
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Facilities
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Library
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Physical Education
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Transport
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hostel Facility
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Computer Center
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sports Club
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Health Care
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Canteen
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Bank ATM
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        E-Resources
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Facilities for Differently Abled
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                R&D
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Anti-Plagiarism Software
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEle" aria-expanded="false" aria-controls="collapseEle">
+                                IIC & EDC
+                            </button>
+                        </h2>
+                        <div id="collapseEle" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Eco-System
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ED Cell
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        IMSME
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ARIIA
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Incubation
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Partners
+                                    </button>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Events & Reports
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Alumni</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NIRF</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NBA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">IQAC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exam Branch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pay Tuition Fees Online</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MOUs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women Empowerment</a>
+            </li>
+        </ul>
+        <p class="gallery">
+        <h1>Gallery</h1>
+        </p>
+
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/college.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/college.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/college.png" class="d-block w-100" alt="MVSR">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <div class="clg-hero">
+            <h1>College Profile</h1>
+            <div class="card">
+                <p>Maturi Venkata Subba Rao (MVSR) Engineering College was established in 1981 with affiliation to
+                    Osmania University. Currently, the college has B.E programs in Civil, CSE, ECE, EEE, IT, Mechanical
+                    and Automobile Engineering, PG programs in CSE, ECE and Mechanical besides MBA. This college has
+                    been recognized by Osmania University as a Centre for pursuing research leading to the award of
+                    Ph.D. Degree in the Disciplines of CSE, ECE and Mechanical Engineering. In all about a 1000 students
+                    take admission per year. The college is one of the earliest of the private Engineering colleges in
+                    the state, and since inception, the college has ensured excellent and exemplary standards, which has
+                    helped the college to be one of the topmost andsought after colleges in the state.</p>
+            </div>
+            <h1>Our Vision</h1>
+            <div class="card">
+                <p>To Impart technical education of the highest standards, producing technically competent confident and
+                    socially responsible engineers.</p>
+            </div>
+            <h1>Our Mission</h1>
+            <div class="card">
+                <p style="text-indent: 0cap; padding:1.3rem;">To Impart adequate fundamental knowledge,technical and
+                    soft skills to students.<br>
+                    To make learning process exciting,stimulating and joyful.<br>
+                    To create a climate conducive to excellent teaching - learning Process.<br>
+                    To bring out creativity in students.<br>
+                    To contribute to advancement of engineering & technology.<br>
+                    To make positive contribution to meet societal nee</p>
+            </div>
+        </div>
+        <!-- Fixed Buttons of the Page-->
+        <button class="backtotop" id="BackToTop">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                </path>
+            </svg>
+        </button>
+        <div class="announcements">
+            <button id="btn1">
+                <i class="fa-solid fa-bullhorn"></i>
+            </button>
+            <button id="btn2">
+                <i class="fa-solid fa-chart-line"></i>
+            </button>
+            <button id="btn3">
+                <i class="fa-solid fa-business-time"></i>
+            </button>
+            <button id="btn4">
+                <i class="fa-solid fa-file"></i>
+            </button>
+        </div>
+        <div id="ann-box" style="font-size: 3rem;">
+
+            <ul>
+                <li> Placements 2023 (720+ Offers): 24LPA Goldman Sachs, 24LPA Zscaler
+                </li>
+                <li>Bulk recruiters [ Accenture-130, Cognizant-113, L&T:Mindtree-153 ] 
+                </li>
+                Hearty Congratulations to all selected students
+            </ul>
+        </div>
+        <div id="chart-box">
+
+            <ul>
+                <li><a href="#">ATAL FDP on UAV & Drone Tech 27-01-2025</a> </li>
+                <li><a href="#">Revised Notifictaion: BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Jan-2025 Examinations</a>
+                </li>
+                <li><a href="#">BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Exam Fee Payment Instructions</a></li>
+                <li><a href="#">BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Jan-2025 Examination notification</a></li>
+                <li><a href="#">Revised exam fee notifications -B.E,MBA/M.E/M.Tech & Minor Degree Dec 2024</a></li>
+                <li><a href="#">BE Minor Degree Sem-VII Main Exam Fee Notice - Nov 2024</a></li>
+                <li><a href="#">Exam Fee Notifications of BE, MBA & ME/MTech - Nov,2024 </a></li>
+                <li><a href="#">Virtual Labs - ICT</a></li>
+                <li><a href="#">BE II-Sem Adv. Supple Nov 2024</a></li>
+                <li><a href="#">Minor Degree Programmer (R21) 20.08.2024</a></li>
+                <li><a href="#">B Category Application Form for MBA/ ME/ M Tech</a></li>
+            </ul>
+        </div>
+        <div id="company-box">
+
+            <ul>
+                <li><a href="#">ATAL FDP on UAV & Drone Tech 27-01-2025</a> </li>
+                <li><a href="#">Revised Notifictaion: BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Jan-2025 Examinations</a>
+                </li>
+                <li><a href="#">BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Exam Fee Payment Instructions</a></li>
+                <li><a href="#">BE-OU Main/Supple(AICTE/CBCS/Non-CBCS) Jan-2025 Examination notification</a></li>
+                <li><a href="#">Revised exam fee notifications -B.E,MBA/M.E/M.Tech & Minor Degree Dec 2024</a></li>
+                <li><a href="#">BE Minor Degree Sem-VII Main Exam Fee Notice - Nov 2024</a></li>
+                <li><a href="#">Exam Fee Notifications of BE, MBA & ME/MTech - Nov,2024 </a></li>
+                <li><a href="#">Virtual Labs - ICT</a></li>
+                <li><a href="#">BE II-Sem Adv. Supple Nov 2024</a></li>
+                <li><a href="#">Minor Degree Programmer (R21) 20.08.2024</a></li>
+                <li><a href="#">B Category Application Form for MBA/ ME/ M Tech</a></li>
+            </ul>
+        </div>
+        <div id="form-box">
+
+            <ul>
+                <li><a href="#">AICTE Model Curriculum</a> </li>
+                <li><a href="#">NBA</a>
+                </li>
+                <li><a href="#">NIRF</a></li>
+                <li><a href="#">ISO</a></li>
+                <li><a href="#">Anti Ragging Committee</a></li>
+                <li><a href="#">Stock Register</a></li>
+                <li><a href="#">Faculty List </a></li>
+                <li><a href="#">Student List</a></li>
+                <li><a href="#">Grievance Redressal</a></li>
+                <li><a href="#">Formats (For office use) </a></li>
+            </ul>
+        </div>
+        <div class="table-class">
+            <h1>Training and Placement</h1>
+            <table class="table">
+                <tr>
+                    <td><a href="#">
+                            <p class="image-text">Transportation</p><img src="assets/transportation.jpg">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Professional<br>Bodies</p><img src="assets/professional_bodies.jpg">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Time table</p><img src="assets/time_table.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Syllabus</p><img src="assets/syllabus.jpg" alt="">
+                        </a></td>
+                </tr>
+                <tr>
+                    <td> <a href="#">
+                            <p class="image-text">Facilities</p><img src="assets/facilities.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Alumni</p> <img src="assets/alumni.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Media Room</p><img src="assets/media_room.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Milestones</p><img src="assets/milestones.jpg" alt="">
+                        </a></td>
+
+
+                </tr>
+                <tr>
+                    <td><a href="#">
+                            <p class="image-text">Attendance</p><img src="assets/attendance.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Swayam</p><img src="assets/swayam.png" alt="">
+                        </a></td>
+                    <td><a href="">
+                            <p class="image-text">Student Clubs</p><img src="assets/student_club.jpg" alt="">
+                        </a></td>
+                    <td><a href="#">
+                            <p class="image-text">Pay Fees Online</p><img src="assets/payfeesonline.jpg" alt="">
+                        </a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="card-container">
+            <div class="card-one">
+                <p class="text-title">Awards</p>
+                <div class="cardzz">
+                    <div class="card-details">
+
+                        <ul>
+                            <li><a href="#">MVSREC won 8 awards in 5 categories of CSI-HYDERABAD Chapter Excellence
+                                    Awards
+                                    2023</a></li>
+                            <li><a href="#">
+                                    MVSR Team K.Abhishek(CSE) & K.Karthikeya(CSE) mentored by Dr.Akhil Khare(Prof. in
+                                    CSE)
+                                    was awarded in the Top-10 among 490 teams shortlisted all over India during the
+                                    IIT-Bombays e-Yantra Innovation Challenge 2023 in IOT & Robotics on 5th & 6th April
+                                    2023 at IIT-Bombay.</a></li>
+                            <li><a href="#">
+                                    MVSREC Team ELITEEE winners of Smart India Hackathon 2022 @ KPRIET, Coimbatore Nodal
+                                    Centre (PSID-V930)</a></li>
+                            <li><a href="#">
+                                    Dr. D. Sirisha, Asst. Prof., CSED, MVSREC Winner Dare to Dream Innovation Contest
+                                    2.0
+                                    Felicitated by the Hon. Defence Minister Shri Rajnath Singh</a></li>
+                            <li><a href="#">IEEE-MVSR bags 3 awards in 2020 presented by IEEE hyderabad Chapter</a></li>
+                            <li><a href="#">
+                                    CSI-MVSR Student Branch Bags 8 Prestigious National Awards
+                                </a></li>
+                            <li><a href="#">
+                                    AIR 10th Rank in SAE BAJA-2019</a></li>
+                            <li><a href="#">SAE (Society of Automotive Engineers) Efficycle-2018 Awards</a></li>
+                            <li><a href="#">IEEE - Best Out Reach Award</a></li>
+                            <li><a href="#">
+                                    11th SAE-Convention Awards</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <p class="text-title">Achievements</p>
+                <div class="cardzz">
+                    <div class="card-details">
+                        <ul>
+                            <li><a href="#">286 students of MVSREC completed CISCO-AICTE-NASSCOM FutureSkills PRIME
+                                    Virtual internship program in Cyber Security from 01 Apr - 15 May 2021
+                                </a></li>
+                            <li><a href="#">
+                                    Dr. Nallella Srinivas, PED, MVSREC written
+                                    Book titled: Sports Psychological Applications for Football & Hockey players
+                                    <br>
+
+                                    Released by:-
+                                    Prof. D. Ravinder Yadav, Vice Chancellor, Osmania University
+                                    Prof. Laxminaryana, Registar, Osmania University
+                                    In the presence of: Prof. Bannoth Reddya Naik, OSD, OU</a>
+                            </li>
+                            <li><a href="#">
+                                    MVSREC Team ELITEEE winners of Smart India Hackathon 2022 @ KPRIET, Coimbatore Nodal
+                                    Centre (PSID-V930)</a></li>
+                            <li><a href="#">
+                                    Dr. D. Sirisha, Asst. Prof., CSED, MVSREC Winner Dare to Dream Innovation Contest
+                                    2.0
+                                    Felicitated by the Hon. Defence Minister Shri Rajnath Singh</a></li>
+                            <li><a href="#">IEEE-MVSR bags 3 awards in 2020 presented by IEEE hyderabad Chapter</a></li>
+                            <li><a href="#">
+                                    CSI-MVSR Student Branch Bags 8 Prestigious National Awards
+                                </a></li>
+                            <li><a href="#">
+                                    AIR 10th Rank in SAE BAJA-2019</a></li>
+                            <li><a href="#">SAE (Society of Automotive Engineers) Efficycle-2018 Awards</a></li>
+                            <li><a href="#">IEEE - Best Out Reach Award</a></li>
+                            <li><a href="#">
+                                    11th SAE-Convention Awards</a></li>
+                        </ul>
+
+
+                    </div>
+                    <button class="card-button"><a href="#">All Awards & Achievements</a></button>
+                </div>
+            </div>
+            <div class="card-two">
+                <p class="text-title">News</p>
+                <div class="cardzz">
+                    <div class="card-details">
+
+                        <ul>
+                            <li><a href="#">MVSREC won 8 awards in 5 categories of CSI-HYDERABAD Chapter Excellence
+                                    Awards
+                                    2023</a></li>
+                            <li><a href="#">
+                                    MVSR Team K.Abhishek(CSE) & K.Karthikeya(CSE) mentored by Dr.Akhil Khare(Prof. in
+                                    CSE)
+                                    was awarded in the Top-10 among 490 teams shortlisted all over India during the
+                                    IIT-Bombays e-Yantra Innovation Challenge 2023 in IOT & Robotics on 5th & 6th April
+                                    2023 at IIT-Bombay.</a></li>
+                            <li><a href="#">
+                                    MVSREC Team ELITEEE winners of Smart India Hackathon 2022 @ KPRIET, Coimbatore Nodal
+                                    Centre (PSID-V930)</a></li>
+                            <li><a href="#">
+                                    Dr. D. Sirisha, Asst. Prof., CSED, MVSREC Winner Dare to Dream Innovation Contest
+                                    2.0
+                                    Felicitated by the Hon. Defence Minister Shri Rajnath Singh</a></li>
+                            <li><a href="#">IEEE-MVSR bags 3 awards in 2020 presented by IEEE hyderabad Chapter</a></li>
+                            <li><a href="#">
+                                    CSI-MVSR Student Branch Bags 8 Prestigious National Awards
+                                </a></li>
+                            <li><a href="#">
+                                    AIR 10th Rank in SAE BAJA-2019</a></li>
+                            <li><a href="#">SAE (Society of Automotive Engineers) Efficycle-2018 Awards</a></li>
+                            <li><a href="#">IEEE - Best Out Reach Award</a></li>
+                            <li><a href="#">
+                                    11th SAE-Convention Awards</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <p class="text-title">Events</p>
+                <div class="cardzz">
+                    <div class="card-details">
+                        <ul>
+                            <li><a href="#">MVSREC won 8 awards in 5 categories of CSI-HYDERABAD Chapter Excellence
+                                    Awards
+                                    2023</a></li>
+                            <li><a href="#">
+                                    MVSR Team K.Abhishek(CSE) & K.Karthikeya(CSE) mentored by Dr.Akhil Khare(Prof. in
+                                    CSE)
+                                    was awarded in the Top-10 among 490 teams shortlisted all over India during the
+                                    IIT-Bombays e-Yantra Innovation Challenge 2023 in IOT & Robotics on 5th & 6th April
+                                    2023 at IIT-Bombay.</a></li>
+                            <li><a href="#">
+                                    MVSREC Team ELITEEE winners of Smart India Hackathon 2022 @ KPRIET, Coimbatore Nodal
+                                    Centre (PSID-V930)</a></li>
+                            <li><a href="#">
+                                    Dr. D. Sirisha, Asst. Prof., CSED, MVSREC Winner Dare to Dream Innovation Contest
+                                    2.0
+                                    Felicitated by the Hon. Defence Minister Shri Rajnath Singh</a></li>
+                            <li><a href="#">IEEE-MVSR bags 3 awards in 2020 presented by IEEE hyderabad Chapter</a></li>
+                            <li><a href="#">
+                                    CSI-MVSR Student Branch Bags 8 Prestigious National Awards
+                                </a></li>
+                            <li><a href="#">
+                                    AIR 10th Rank in SAE BAJA-2019</a></li>
+                            <li><a href="#">SAE (Society of Automotive Engineers) Efficycle-2018 Awards</a></li>
+                            <li><a href="#">IEEE - Best Out Reach Award</a></li>
+                            <li><a href="#">
+                                    11th SAE-Convention Awards</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="videos">
+            <h1>Videos</h1>
+            <iframe src="https://drive.google.com/file/d/12zGf2ttZkiewnBLxE76TJJyP3nwfW-B5/preview" width="1200"
+                height="600" allow="autoplay"></iframe>
+        </div>
+        <div class="change-chapters">
+            <div class="chapters">
+                <button id="button1" class="clicked">NPTEL<br>Local<br>Chapter</button>
+            <button id="button2">IIT Spoken<br>Tutorial</button>
+            <button id="button3">IIC</button>
+            <button id="button4">Cisco</button>
+            </div>
+            <div id="chapter-card">
+                <h3 id="chapter-card-heading">About NPTEL</h3>
+                <p id="chapter-card-content">
+                    The main objective of the National Programme on Technology Enhanced Learning (NPTEL) is to enhance the quality of engineering & science education in the country by developing contents for undergraduate and postgraduate curricula using video and web-based courses.
+                </p>
+                <div id="chapter-card-buttons">
+            <button id="actionButton1">View Statistics</button>
+            <button id="actionButton2">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-class">
+          <div class="footer-left">
+            <div class="college-details">
+              <div class="college-main">
+                <div class="college-logo">
+                  <img src="assets/logo.png" alt="college logo">
+                </div>
+                <div class="college-name">
+                  <h3>Maturi Venkata Subba Rao<br>Engineering College<br>(An Autonomous Institution)<br>Sponsored by
+                    Matrusri Education Society</h3>
+                </div>
+              </div>
+              <div class="college-address">
+                <p><span>Address</span><br>
+                  Badangpet, Nadargul Main Road, Hyderabad, Telangana 501510</p>
+                <a href="https://maps.app.goo.gl/WvBjfttvzQe2zx52A">
+                  <button>Get Directions</button>
+                </a>
+    
+              </div>
+            </div>
+            <div class="logos">
+              <div class="visitors">
+                <h2>Visitors: 4143209</h2>
+              </div>
+              <div class="socials">
+                <div class="insta"><a href="https://www.instagram.com/mvsrconnect/"><i
+                      class="fa-brands fa-instagram"></i></a></div>
+                <div class="linkedin"><a href="http://www.linkedin.com/in/mvsrec"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="twitter"><a href="https://twitter.com/MVSRConnect"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="facebook"><a href="https://www.facebook.com/MVSRConnect"><i
+                      class="fa-brands fa-facebook-f"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="subss">
+              <div class="administration">
+                <div class="footer-title">Administration</div>
+                <div class="footer-links">
+                  <a href="#">Our Enterpreneurs</a><br>
+                  <a href="#">Campus Placements</a><br>
+                  <a href="#">Alumni Citation</a><br>
+                  <a href="#">Alumni Registration</a><br>
+                  <a href="#">Hostel Facility</a><br>
+                  <a href="#">Maintenance</a><br>
+                  <a href="#">Admin. Committees</a><br>
+                </div>
+              </div>
+              <div class="academics">
+                <div class="footer-title">Academics</div>
+                <div class="footer-links">
+                  <a href="#">NAD</a><br>
+                  <a href="#">Industry Interaction Cell</a><br>
+                  <a href="#">Grievance Redressal</a><br>
+                  <a href="#">Facility</a><br>
+                  <a href="#">NPTEL Local Chapter</a><br>
+                  <a href="#">Blogs and Apps</a><br>
+                  <a href="#">Previous Question Papers</a>
+                </div>
+              </div>
+              <div class="additional">
+                <div class="footer-title">Additional</div>
+                <div class="footer-links">
+                  <a href="#">Recruitment Procedure</a><br>
+                  <a href="#">Staff Rules & Regulations</a><br>
+                  <a href="#">Academic & Admin Duties</a><br>
+                  <a href="#">AICTE</a><br>
+                  <a href="#">B.E Rules & Regulations</a><br>
+                  <a href="#">Administration Sections</a><br>
+                  <a href="#">IIT-Spoken Tutorial MoU</a><br>
+                  <a href="#">Milestones</a>
+                </div>
+              </div>
+            </div>
+            <div class="quick-links">
+              <div class="first">
+                <div class="footer-title">Administration</div>
+                <div class="footer-links">
+                  <a href="#">NAD</a><br>
+                  <a href="#">AICTE Feedback</a><br>
+                  <a href="#">B.E Rules &Regulations </a><br>
+                  <a href="#">Alumni</a><br>
+                </div>
+              </div>
+              <div class="second">
+                <div class="footer-title"></div>
+                <div class="footer-links">
+                  <a href="#">Awards</a><br>
+                  <a href="#">Photo Gallery</a><br>
+                  <a href="#">Milestones</a><br>
+                  <a href="#">Blogs</a><br>
+                  <a href="#">Apps</a><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>Copyright &copy; 2025. All Rights Reserved!</p>
+          </div>
+          <div class="linkss">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Site map</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
