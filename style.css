@@ -1,0 +1,888 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* background-color:rgb(186, 27, 53); */
+
+/*Top-Bar*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(229, 229, 229, 0.25);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    height: 5rem;
+    z-index: 10;
+}
+
+.left-header-part {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.right-header-part {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.logo {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.logo img {
+    height: 4.5rem;
+    width: 5.5rem;
+}
+
+.clg-name {
+    width: 85%;
+    font-size: 1.5rem;
+    color: #14213d;
+    margin: 0.65rem;
+}
+
+/* .menu-bar i
+{
+    font-size:1.5rem;
+    margin-right:2rem;
+    width:1.7rem;
+} */
+
+
+.icon-menu {
+    --gap: 5px;
+    --height-bar: 2.5px;
+    --pos-y-bar-one: 0;
+    --pos-y-bar-three: 0;
+    --scale-bar: 1;
+    --rotate-bar-one: 0;
+    --rotate-bar-three: 0;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    cursor: pointer;
+    position: relative;
+}
+
+.bar {
+    position: relative;
+    height: var(--height-bar);
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #9941fc;
+}
+
+.bar--1 {
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+}
+
+.bar--2 {
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+}
+
+.bar--3 {
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+}
+
+.check-icon:checked+.icon-menu>.bar--1 {
+    transition: top 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked+.icon-menu>.bar--3 {
+    transition: bottom 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked+.icon-menu {
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
+}
+
+.d-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* FIN ICON-MENU */
+
+
+
+.offcanvas {
+    background-color: rgba(92, 103, 125, 0.25);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 1050;
+}
+
+.offcanvas-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.toggle i {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+/* Body */
+.main {
+    flex:1;
+    margin-top: 6rem;
+    justify-content: space-around;
+}
+
+.nav {
+    font-size: 1rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 43%;
+}
+
+.carousel {
+    height: 500px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 0.4rem;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.carousel-inner {
+    height: 500px;
+    border-radius: 0.4rem;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+    display: block;
+    border-radius: 0.4rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    transform: translateY(-59%);
+}
+
+.dropdown {
+    margin-top: 0.6rem;
+    width: inherit;
+}
+
+/* College Hero */
+.clg-hero h1 {
+    margin: 0 38%;
+}
+
+.card {
+    max-width: 1200px;
+    height: fit-content;
+    margin: 1.5rem 10rem;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+
+}
+
+.card p {
+    text-indent: 4cap;
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    text-align: justify;
+}
+
+/* Back to top button */
+.backtotop {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    bottom: 1.4rem;
+    right: 1.4rem;
+    z-index: 50;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.backtotop:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+}
+
+.backtotop:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.backtotop::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+
+.backtotop:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
+/* Announcement Buttons */
+.announcements {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    position: fixed;
+    top: 10rem;
+    left: 1.5rem;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: 0.3rem;
+    font-size: 1.8rem;
+    color: #111111;
+    text-transform: uppercase;
+    border-radius: 50%;
+    font-weight: 500;
+    text-shadow: none;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #80191980;
+    transition: 0.5s ease;
+    user-select: none;
+    margin: 1.5rem 0 0 0;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+    color: #ffffff;
+    background: #111111;
+    border: 1px solid #111111;
+    text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 12px #ffffff;
+}
+
+/*Table*/
+.table-class {
+    background-color: #14213d;
+    margin: 5rem 0 0 0;
+}
+
+.table {
+    width: 1000px;
+    /* Limit the table's maximum width */
+    height: 400px;
+    /* Set fixed height */
+    border-collapse: collapse;
+    background-color: inherit;
+    margin: 20px auto;
+    padding: 5rem 5rem 5rem 5rem;
+    /* Center the table horizontally */
+}
+
+.table td {
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 12rem;
+    /* Control individual cell width */
+    height: 12rem;
+    /* Control individual cell height */
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: inherit;
+}
+
+.table td img {
+    height: 100%;
+    width: 100%;
+    /* Ensure images fit within cells */
+    object-fit: fill;
+    /* Make sure images cover the entire cell */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.table td a {
+    position: relative;
+    /* Necessary for positioning the text on top of the image */
+    display: block;
+    /* Ensure anchor takes up the full space of the td */
+    background-color: inherit;
+}
+
+.table td img:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.image-text {
+    position: absolute;
+    bottom: -30px;
+    /* Start outside the visible area */
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for readability */
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    opacity: 0;
+    /* Initially hidden */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for sliding and fading */
+    z-index: 1;
+    /* Ensure text is on top of the image */
+}
+
+.table td a:hover .image-text {
+    bottom: 10px;
+    /* Slide text up to the bottom-left of the image */
+    opacity: 1;
+    /* Make text visible */
+}
+
+.table-class h1 {
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    padding: 0;
+    /* Ensures no extra padding is affecting the height */
+    text-align: center;
+    /* Centers the heading */
+    line-height: 1.5;
+    /* Adjusts the line height for better spacing */
+    color: white;
+}
+
+/*Announcement displays */
+#ann-box,#chart-box,#company-box,#form-box{
+    position: fixed;
+    border: 1px solid black;
+    height: 70vh;
+    width: 30%;
+    top: 15%;
+    left: 35%;
+    background-color: rgba(209, 214, 220, 0.688);
+    backdrop-filter: blur(10px);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+#ann-box ul,#chart-box ul,#form-box ul,#company-box ul {
+    list-style-type: disc;
+    /* Remove bullet points */
+    padding: 1.4rem;
+    margin: 0;
+    height: 100%;
+    animation: scrollList 15s linear infinite;
+    /* Animation for scrolling the list */
+}
+
+#ann-box:hover ul,#chart-box:hover ul,#form-box:hover ul,#company-box:hover ul {
+    animation-play-state: paused;
+}
+
+#ann-box li a,#form-box li a,#chart-box li a {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.3rem 0;
+    text-decoration: none;
+    color: #111111;
+}
+
+#ann-box li a:hover,#form-box li a:hover,#chart-box li a:hover {
+    color: white;
+}
+
+@keyframes scrollList {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Scrolling cards -4 */
+.card-container {
+    display: flex;
+    margin: 4rem 10%;
+}
+
+.card-one,
+.card-two {
+    padding: 0 0 0 3rem;
+}
+
+.cardzz {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-details {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.card-details a {
+    text-decoration: none;
+}
+
+.card-details a:hover {
+    color: #111111;
+}
+
+.card-details ul {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0 0;
+    animation: scrollList 15s linear infinite;
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Hover*/
+.cardzz:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.cardzz:hover ul {
+    animation-play-state: paused;
+}
+
+
+
+
+/* Videos section */
+.videos
+{
+    margin:3rem 10%;
+}
+iframe
+{
+    margin:1rem;
+    border-radius:0.5rem;
+}
+
+
+/* Footer */
+footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: #FDF0D5;
+}
+
+.college-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.college-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.college-logo img {
+    width: 12.5rem;
+    height: 11rem;
+}
+
+.college-name {
+    flex: 1;
+    color: #14213d;
+    text-align: left;
+}
+
+.college-name h3 {
+    padding:3rem 1rem;
+    font-size: large;
+}
+
+
+.college-address h2 {
+    padding: 2rem;
+
+}
+
+.college-address span {
+    font-size: 1.3rem;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #003049;
+}
+
+.subss {
+    padding: 0.6rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.administration,
+.academics,
+.additional {
+    padding: 1rem;
+    margin: 1rem 1.5rem 0 1rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.footer-links {
+    padding: 0 1rem 0 0.5rem;
+    margin: 1.5rem 0 0 0;
+    text-align: left;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.footer-links a:hover
+{
+    text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 12px #ffffff;
+}
+.quick-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-links p {
+
+    color: #ffffff;
+
+}
+
+.quick-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.quick-links a:hover {
+
+    text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 12px #ffffff;
+}
+
+.quick-links span {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #edf2f4;
+    flex: 1;
+}
+.copyright 
+{
+    padding:1.5em;
+}
+.linkss a,
+.linkss {
+    text-decoration: none;
+    padding: 1.5rem;
+}
+
+.college-address p {
+    padding: 0 0 0 1.5rem;
+}
+
+.college-address a {
+    padding: 1rem;
+}
+
+.college-address button {
+    transition: 0.5s ease-out;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 10rem;
+}
+
+.college-address button:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.visitors {
+    text-align: center;
+    font-size: larger;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem 2rem 5rem;
+}
+.socials i
+{
+    color:white;
+    font-size:1.8rem;
+}
+.insta {
+    margin: 3rem;
+}
+
+.insta,
+.linkedin,
+.facebook,
+.twitter {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 0 1.5rem;
+    color: black;
+    background-color: #111111;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.socials  i {
+    padding: 0.6rem;
+}
+
+.insta:hover,
+.linkedin:hover,
+.facebook:hover,
+.twitter:hover {
+    background-color: grey;
+}
+
+/*Chapter changing */
+.change-chapters
+{
+    display:flex;
+    flex-direction: column;
+    margin:3rem 30% 3rem 25%;
+    height:500px;
+    width:700px;
+}
+#button1,#button2,#button3,#button4
+{
+    padding:1rem;
+    width:7rem;
+    border-radius:0.5rem;
+    flex:1;
+    font-size: large;
+}
+#button1:hover,#button2:hover,#button3:hover,#button4:hover
+{
+    background-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    color:white;
+}
+#button1:focus,#button2:focus,#button3:focus,#button4:focus
+{
+    background-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    color:white;
+}
+.chapters
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+#chapter-card
+{
+    height:400px;
+    background-color: #edf2f4;
+    transition: 0.5s ease-out;
+}
+#chapter-card:hover
+{
+
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+#chapter-card-heading
+{
+    text-align:center;
+    padding:1rem;
+}
+#chapter-card-content
+{
+    font-size:1.5rem;
+    justify-content:center;
+}
+#chapter-card-buttons
+{
+    display:inline-block;
+    flex-direction:row;
+    padding:0.5rem 2rem;
+    margin:1rem;
+}
+.clicked
+{
+    background-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    color:white;
+}
+#chapter-card-buttons button
+{
+    padding:0.3rem 1rem;
+    border-radius:0.5rem;
+    margin:1rem;
+    transition: 0.5s ease-out;
+}
+#chapter-card-buttons button:hover
+{
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+#chapter-card-content
+{
+    padding:0 1rem;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;  /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #008bf8; /* Thumb color when hovered */
+}
+
+/* Scroll-container */
+.scroll-container {
+    width: 100%;
+    height: 400px;  /* Height of the scrollable container */
+    overflow-y: scroll;  /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+/* Style for the checkpoints */
