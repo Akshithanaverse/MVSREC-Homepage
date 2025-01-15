@@ -4,7 +4,6 @@ html {
     padding: 0;
 }
 
-/* background-color:rgb(186, 27, 53); */
 
 /*Top-Bar*/
 .header {
@@ -61,12 +60,6 @@ html {
     margin: 0.65rem;
 }
 
-/* .menu-bar i
-{
-    font-size:1.5rem;
-    margin-right:2rem;
-    width:1.7rem;
-} */
 
 
 .icon-menu {
@@ -131,7 +124,6 @@ html {
     align-items: flex-start;
 }
 
-/* FIN ICON-MENU */
 
 
 
@@ -337,14 +329,11 @@ h1 {
 
 .table {
     width: 1000px;
-    /* Limit the table's maximum width */
     height: 400px;
-    /* Set fixed height */
     border-collapse: collapse;
     background-color: inherit;
     margin: 20px auto;
-    padding: 5rem 5rem 5rem 5rem; /* Gap between cells */
-    /* Center the table horizontally */
+    padding: 5rem 5rem 5rem 5rem; 
 }
 
 .table td {
@@ -352,9 +341,7 @@ h1 {
     text-align: center;
     vertical-align: middle;
     width: 12rem;
-    /* Control individual cell width */
     height: 12rem;
-    /* Control individual cell height */
     overflow: hidden;
     border-radius: 0.5rem;
     background-color: inherit;
@@ -364,68 +351,51 @@ h1 {
 .table td img {
     height: auto;
     width: 100%;
-    /* Ensure images fit within cells */
     object-fit: fill;
-    /* Make sure images cover the entire cell */
     border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .table td a {
     position: relative;
-    /* Necessary for positioning the text on top of the image */
     display: block;
-    /* Ensure anchor takes up the full space of the td */
     background-color: inherit;
 }
 
 .table td img:hover {
     transform: scale(1.1);
-    /* Zoom effect on hover */
 }
 
 .table td a:hover .image-text {
-    bottom: 10px; /* Slide text into view */
-    opacity: 1; /* Make visible */
+    bottom: 10px; 
+    opacity: 1; 
 }
 
 .image-text {
     position: absolute;
     bottom: -30px;
-    /* Start outside the visible area */
     left: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background for readability */
     padding: 5px;
     font-size: 1.5rem;
     border-radius: 5px;
     opacity: 0;
-    /* Initially hidden */
     transition: all 0.3s ease-in-out;
-    /* Smooth transition for sliding and fading */
     z-index: 1;
-    /* Ensure text is on top of the image */
 }
 
 .table td a:hover .image-text {
     bottom: 10px;
-    /* Slide text up to the bottom-left of the image */
     opacity: 1;
-    /* Make text visible */
 }
 
 .table-class h1 {
     font-size: 2rem;
-    /* Adjust font size as needed */
     margin-bottom: 20px;
-    /* Adds space below the heading */
     padding: 0;
-    /* Ensures no extra padding is affecting the height */
     text-align: center;
-    /* Centers the heading */
     line-height: 1.5;
-    /* Adjusts the line height for better spacing */
     color: white;
 }
 
@@ -433,9 +403,9 @@ h1 {
 #ann-box,#chart-box,#company-box,#form-box{
     position: fixed;
     border: 1px solid black;
-    height: 70vh; /* Responsive height */
-    width: 30vw; /* Responsive width */
-    top: 15%; /* Position from the top */
+    height: 70vh; 
+    width: 30vw; 
+    top: 15%; 
     left: 35%; 
     background-color: rgba(209, 214, 220, 0.688);
     backdrop-filter: blur(10px);
@@ -447,12 +417,10 @@ h1 {
 
 #ann-box ul,#chart-box ul,#form-box ul,#company-box ul {
     list-style-type: disc;
-    /* Remove bullet points */
     padding: 1.4rem;
     margin: 0;
     height: 100%;
     animation: scrollList 15s linear infinite;
-    /* Animation for scrolling the list */
 }
 
 #ann-box:hover ul,#chart-box:hover ul,#form-box:hover ul,#company-box:hover ul {
@@ -556,10 +524,10 @@ h1 {
     iframe {
         margin: 1rem;
         border-radius: 0.5rem;
-        width: 90vw;          /* Adjust width relative to the viewport width */
-        height: 80vh;         /* Adjust height relative to the viewport height */
-        max-width: 100%;      /* Prevents exceeding the width of its container */
-        max-height: 80vh;     /* Prevents the iframe from exceeding the viewport height */
+        width: 90vw;          
+        height: 80vh;        
+        max-width: 100%;      
+        max-height: 80vh;     
     }
     
 
@@ -884,28 +852,28 @@ footer {
 
 /* Scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;  /* Width of the vertical scrollbar */
-    height: 10px; /* Height of the horizontal scrollbar */
+    width: 10px;  
+    height: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;  /* Track background */
+    background: #f1f1f1;  
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Scrollbar thumb color */
-    border-radius: 10px; /* Rounded corners */
+    background: #888; 
+    border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #008bf8; /* Thumb color when hovered */
+    background: #008bf8; 
 }
 
 /* Scroll-container */
 .scroll-container {
     width: 100%;
-    height: 400px;  /* Height of the scrollable container */
-    overflow-y: scroll;  /* Enable vertical scrolling */
+    height: 400px;  
+    overflow-y: scroll;  
     border: 1px solid #ccc;
     position: relative;
 }
@@ -913,19 +881,18 @@ footer {
 /* Media Queries */
 
 /* header */
-/* For tablets and smaller screens */
 @media (max-width: 992px) {
     .header {
       height: auto;
       padding: 0.5rem;
-      flex-direction: column; /* Stack header elements vertically */
+      flex-direction: column; 
       align-items: flex-start;
     }
   
     .left-header-part {
       width: 100%;
       margin-right: 0;
-      flex-direction: row; /* Stack logo and name vertically */
+      flex-direction: row; 
       align-items: flex-start;
     }
   
@@ -938,22 +905,21 @@ footer {
     .clg-name {
       font-size: 1.25rem;
       margin: 0.5rem 0;
-      width: auto; /* Adjust width to fit content */
+      width: auto; 
       text-align: left;
     }
   
     .right-header-part {
       margin-left: 0;
       width: 100%;
-      justify-content: flex-end; /* Align right-part to the end */
+      justify-content: flex-end; 
     }
   
     .menu-bar button {
-      margin-left: auto; /* Align toggle button to the far right */
+      margin-left: auto; 
     }
   }
   
-  /* For smaller tablets and large phones */
   @media (max-width: 768px) {
     .clg-name {
       font-size: 1rem;
@@ -964,15 +930,15 @@ footer {
         display:none;
     }
     .icon-menu {
-      width: 20px; /* Reduce menu icon size */
+      width: 20px; 
     }
   
     .bar {
-      height: 2px; /* Adjust bar height */
+      height: 2px; 
     }
   }
   
-  /* For small phones */
+  
   @media (max-width: 576px) {
     .header {
       padding: 0.25rem;
@@ -989,11 +955,11 @@ footer {
     }
   
     .icon-menu {
-      width: 18px; /* Further reduce icon size */
+      width: 18px; 
     }
   
     .bar {
-      height: 1.8px; /* Adjust bar height */
+      height: 1.8px; 
     }
   }
   
@@ -1003,7 +969,7 @@ footer {
   @media (max-width: 992px) {
     .carousel {
         height: 400px;
-        max-width: 100%; /* Expand to full width on smaller screens */
+        max-width: 100%; 
     }
 
     .carousel-inner {
@@ -1011,12 +977,12 @@ footer {
     }
 
     h1 {
-        font-size: 1.75rem; /* Adjust heading size */
+        font-size: 1.75rem; 
         margin: 0 auto;
     }
 }
 
-/* For large phones and small tablets */
+
 @media (max-width: 768px) {
     .carousel {
         height: 300px;
@@ -1027,7 +993,7 @@ footer {
     }
 
     .carousel-caption {
-        font-size: 0.9rem; /* Reduce caption font size */
+        font-size: 0.9rem;
     }
 
     h1 {
@@ -1035,7 +1001,6 @@ footer {
     }
 }
 
-/* For small phones */
 @media (max-width: 576px) {
     .carousel {
         height: 200px;
@@ -1046,11 +1011,11 @@ footer {
     }
 
     .carousel-caption h5 {
-        font-size: 1rem; /* Reduce slide label font size */
+        font-size: 1rem; 
     }
 
     .carousel-caption p {
-        font-size: 0.8rem; /* Reduce caption text size */
+        font-size: 0.8rem; 
     }
 
     h1 {
@@ -1061,85 +1026,83 @@ footer {
 /* college hero media queries */
 @media (max-width: 992px) {
     .clg-hero h1 {
-        font-size: 2rem; /* Adjust heading size */
+        font-size: 2rem; 
     }
 
     .card {
-        margin: 1rem 2rem; /* Reduce horizontal margin */
+        margin: 1rem 2rem; 
         padding: 1rem;
     }
 
     .card p {
-        font-size: 1.2rem; /* Adjust paragraph font size */
-        text-indent: 1rem; /* Reduce text indent */
+        font-size: 1.2rem; 
+        text-indent: 1rem; 
     }
 }
 
-/* For large phones and small tablets */
+
 @media (max-width: 768px) {
     .clg-hero h1 {
-        font-size: 1.8rem; /* Further reduce heading size */
+        font-size: 1.8rem; 
     }
 
     .card {
-        margin: 1rem 1rem; /* Reduce horizontal margin more */
+        margin: 1rem 1rem; 
         padding: 0.8rem;
     }
 
     .card p {
-        font-size: 1.1rem; /* Further adjust font size */
+        font-size: 1.1rem; 
     }
 }
 
-/* For small phones */
 @media (max-width: 576px) {
     .clg-hero h1 {
-        font-size: 1.5rem; /* Make heading smaller for small screens */
+        font-size: 1.5rem; 
     }
 
     .card {
-        margin: 0.5rem 0.5rem; /* Minimal margin for small screens */
+        margin: 0.5rem 0.5rem; 
         padding: 0.5rem;
     }
 
     .card p {
-        font-size: 1rem; /* Small font size for small screens */
-        text-indent: 0.5rem; /* Minimal indent */
+        font-size: 1rem;
+        text-indent: 0.5rem; 
     }
 }
 
 /* Scrolling card  media queries */
 @media (max-width: 768px) {
     .card-one, .card-two {
-        flex: 1 1 100%; /* Make each card take up the full width */
+        flex: 1 1 100%; 
         padding: 0;
     }
 
     .cardzz {
-        width: 70vh; /* Full width for the card */
+        width: 70vh; 
         height: 300px;
     }
 
     .card-details ul {
-        font-size: 1.1rem; /* Adjust font size for smaller screens */
+        font-size: 1.1rem; 
     }
 }
 
 @media (max-width: 480px) {
     .cardzz {
-        width: 100%; /* Full width for the card */
+        width: 100%;
         height: 300px;
-        padding: 1rem; /* Adjust padding for smaller screens */
+        padding: 1rem; 
     }
 
     .card-details ul {
-        font-size: 1rem; /* Smaller font size */
+        font-size: 1rem; 
     }
 }
 
 /* Video section media queries */
 
-/* Medium screen (tablets) */
 @media (max-width: 1024px) {
     iframe {
         width: 80vw;
@@ -1147,7 +1110,6 @@ footer {
     }
 }
 
-/* Small screen (large mobile devices) */
 @media (max-width: 768px) {
     iframe {
         width: 80vw;
@@ -1155,7 +1117,6 @@ footer {
     }
 }
 
-/* Extra small screen (smaller mobile devices) */
 @media (max-width: 480px) {
     iframe {
         width: 90vw;
@@ -1163,7 +1124,6 @@ footer {
     }
 }
 
-/* Portrait mobile (very small devices like small smartphones) */
 @media (max-width: 320px) {
     iframe {
         width: 90vw;
@@ -1221,54 +1181,52 @@ footer {
 
 @media screen and (max-width: 768px) {
     .announcements {
-        top: 8rem; /* Adjust position for smaller screens */
-        left: 1rem; /* Adjust position for smaller screens */
+        top: 8rem; 
+        left: 1rem; 
     }
 
     #btn1,
     #btn2,
     #btn3,
     #btn4 {
-        width: 3rem; /* Reduce size */
+        width: 3rem; 
         height: 3rem;
-        font-size: 1.5rem; /* Adjust font size */
-        margin: 1rem 0 0 0; /* Adjust spacing */
+        font-size: 1.5rem; 
+        margin: 1rem 0 0 0;
     }
 }
 
-/* For mobile screens (max-width: 480px) */
 @media screen and (max-width: 480px) {
     .announcements {
-        top: 6rem; /* Adjust position for smaller screens */
-        left: 0.5rem; /* Adjust position for smaller screens */
+        top: 6rem; 
+        left: 0.5rem; 
     }
 
     #btn1,
     #btn2,
     #btn3,
     #btn4 {
-        width: 2.5rem; /* Further reduce size */
+        width: 2.5rem; 
         height: 2.5rem;
-        font-size: 1.2rem; /* Further adjust font size */
-        margin: 0.8rem 0 0 0; /* Adjust spacing */
+        font-size: 1.2rem;
+        margin: 0.8rem 0 0 0; 
     }
 }
 
-/* For very small screens (max-width: 320px) */
 @media screen and (max-width: 320px) {
     .announcements {
-        top: 4rem; /* Adjust position for smaller screens */
-        left: 0.3rem; /* Adjust position for smaller screens */
+        top: 4rem; 
+        left: 0.3rem; 
     }
 
     #btn1,
     #btn2,
     #btn3,
     #btn4 {
-        width: 2rem; /* Smallest size */
+        width: 2rem; 
         height: 2rem;
-        font-size: 1rem; /* Smallest font size */
-        margin: 0.5rem 0 0 0; /* Tight spacing */
+        font-size: 1rem; 
+        margin: 0.5rem 0 0 0; 
     }
 }
 
