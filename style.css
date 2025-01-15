@@ -19,10 +19,20 @@ html {
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
-    height: 5rem;
+    height: 7rem;
     z-index: 10;
 }
-
+.clg-name .one
+{
+    padding:0.5rem 0 0 0;
+    line-height: 1cap;
+}
+.clg-name  .two
+{
+    font-size:1rem;
+    justify-content: center;
+    line-height: 1cap;
+}
 .left-header-part {
     display: flex;
     align-items: center;
@@ -80,7 +90,7 @@ html {
     height: var(--height-bar);
     width: 100%;
     border-radius: .5rem;
-    background-color: #9941fc;
+    background-color: #111111;
 }
 
 .bar--1 {
@@ -137,15 +147,10 @@ html {
     font-size: 1.5rem;
 }
 
-.toggle i {
-    font-size: 1.5rem;
-    margin-right: 2rem;
-}
-
 /* Body */
 .main {
     flex:1;
-    margin-top: 6rem;
+    margin-top: 10rem;
     justify-content: space-around;
 }
 
@@ -179,7 +184,7 @@ h1 {
 .carousel-item img {
     object-fit: cover;
     width: 100%;
-    height: inherit;
+    height: 100%;
     display: block;
     border-radius: 0.4rem;
 }
@@ -198,6 +203,7 @@ h1 {
 /* College Hero */
 .clg-hero h1 {
     margin: 0 38%;
+    text-align: center;
 }
 
 .card {
@@ -206,8 +212,8 @@ h1 {
     margin: 1.5rem 10rem;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
+    box-shadow: 10px 10px 40px #bebebe,
+        -10px -10px 40px #ffffff;
 
 }
 
@@ -294,6 +300,7 @@ h1 {
 #btn2,
 #btn3,
 #btn4 {
+    z-index:1000;
     width: 3.8rem;
     height: 3.8rem;
     padding: 0.3rem;
@@ -336,7 +343,7 @@ h1 {
     border-collapse: collapse;
     background-color: inherit;
     margin: 20px auto;
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem; /* Gap between cells */
     /* Center the table horizontally */
 }
 
@@ -351,10 +358,11 @@ h1 {
     overflow: hidden;
     border-radius: 0.5rem;
     background-color: inherit;
+    box-sizing: border-box;
 }
 
 .table td img {
-    height: 100%;
+    height: auto;
     width: 100%;
     /* Ensure images fit within cells */
     object-fit: fill;
@@ -374,6 +382,11 @@ h1 {
 .table td img:hover {
     transform: scale(1.1);
     /* Zoom effect on hover */
+}
+
+.table td a:hover .image-text {
+    bottom: 10px; /* Slide text into view */
+    opacity: 1; /* Make visible */
 }
 
 .image-text {
@@ -420,10 +433,10 @@ h1 {
 #ann-box,#chart-box,#company-box,#form-box{
     position: fixed;
     border: 1px solid black;
-    height: 70vh;
-    width: 30%;
-    top: 15%;
-    left: 35%;
+    height: 70vh; /* Responsive height */
+    width: 30vw; /* Responsive width */
+    top: 15%; /* Position from the top */
+    left: 35%; 
     background-color: rgba(209, 214, 220, 0.688);
     backdrop-filter: blur(10px);
     border-radius: 0.4rem;
@@ -446,7 +459,7 @@ h1 {
     animation-play-state: paused;
 }
 
-#ann-box li a,#form-box li a,#chart-box li a {
+#ann-box li a,#form-box li a,#chart-box li a ,#company-box li a{
     text-align: justify;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -455,7 +468,7 @@ h1 {
     color: #111111;
 }
 
-#ann-box li a:hover,#form-box li a:hover,#chart-box li a:hover {
+#ann-box li a:hover,#form-box li a:hover,#chart-box li a:hover,#company-box li a:hover {
     color: white;
 }
 
@@ -473,15 +486,17 @@ h1 {
 .card-container {
     display: flex;
     margin: 4rem 10%;
+    flex-wrap: wrap;
 }
 
 .card-one,
 .card-two {
     padding: 0 0 0 3rem;
+    flex: 1 1 45%; 
 }
 
 .cardzz {
-    width: 500px;
+    width: 32vw;
     height: 500px;
     border-radius: 20px;
     background: #f5f5f5;
@@ -538,11 +553,16 @@ h1 {
 {
     margin:3rem 10%;
 }
-iframe
-{
-    margin:1rem;
-    border-radius:0.5rem;
-}
+    iframe {
+        margin: 1rem;
+        border-radius: 0.5rem;
+        width: 90vw;          /* Adjust width relative to the viewport width */
+        height: 80vh;         /* Adjust height relative to the viewport height */
+        max-width: 100%;      /* Prevents exceeding the width of its container */
+        max-height: 80vh;     /* Prevents the iframe from exceeding the viewport height */
+    }
+    
+
 
 
 /* Footer */
@@ -554,6 +574,7 @@ footer {
     width: 100%;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    bottom:0;
 }
 
 .footer-class {
@@ -659,6 +680,7 @@ footer {
     text-shadow: 0 0 2px #ffffff, 0 0 6px #ffffff, 0 0 12px #ffffff;
 }
 .quick-links {
+    margin:3rem;
     display: flex;
     flex-direction: row;
 }
@@ -776,16 +798,17 @@ footer {
 {
     display:flex;
     flex-direction: column;
-    margin:3rem 30% 3rem 25%;
-    height:500px;
-    width:700px;
+    margin:3rem 30% 15rem 25%;
+    background-color: #edf2f4;
+    height:46.30vh;
+    width:36.46vw;
+    box-sizing: border-box;
 }
 #button1,#button2,#button3,#button4
 {
     padding:1rem;
-    width:7rem;
+    width:20vw;
     border-radius:0.5rem;
-    flex:1;
     font-size: large;
 }
 #button1:hover,#button2:hover,#button3:hover,#button4:hover
@@ -802,7 +825,9 @@ footer {
 }
 .chapters
 {
+    width:36.46vw;
     display:flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 #chapter-card
@@ -885,4 +910,438 @@ footer {
     position: relative;
 }
 
-/* Style for the checkpoints */
+/* Media Queries */
+
+/* header */
+/* For tablets and smaller screens */
+@media (max-width: 992px) {
+    .header {
+      height: auto;
+      padding: 0.5rem;
+      flex-direction: column; /* Stack header elements vertically */
+      align-items: flex-start;
+    }
+  
+    .left-header-part {
+      width: 100%;
+      margin-right: 0;
+      flex-direction: row; /* Stack logo and name vertically */
+      align-items: flex-start;
+    }
+  
+    .logo img {
+      height: 3.5rem;
+      width: 4.5rem;
+      margin: 0;
+    }
+  
+    .clg-name {
+      font-size: 1.25rem;
+      margin: 0.5rem 0;
+      width: auto; /* Adjust width to fit content */
+      text-align: left;
+    }
+  
+    .right-header-part {
+      margin-left: 0;
+      width: 100%;
+      justify-content: flex-end; /* Align right-part to the end */
+    }
+  
+    .menu-bar button {
+      margin-left: auto; /* Align toggle button to the far right */
+    }
+  }
+  
+  /* For smaller tablets and large phones */
+  @media (max-width: 768px) {
+    .clg-name {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    .clg-name .two
+    {
+        display:none;
+    }
+    .icon-menu {
+      width: 20px; /* Reduce menu icon size */
+    }
+  
+    .bar {
+      height: 2px; /* Adjust bar height */
+    }
+  }
+  
+  /* For small phones */
+  @media (max-width: 576px) {
+    .header {
+      padding: 0.25rem;
+    }
+  
+    .logo img {
+      height: 3rem;
+      width: 3.5rem;
+    }
+  
+    .clg-name {
+      font-size: 0.9rem;
+      margin: 0.25rem 0;
+    }
+  
+    .icon-menu {
+      width: 18px; /* Further reduce icon size */
+    }
+  
+    .bar {
+      height: 1.8px; /* Adjust bar height */
+    }
+  }
+  
+
+  /* Carousel media queries */
+
+  @media (max-width: 992px) {
+    .carousel {
+        height: 400px;
+        max-width: 100%; /* Expand to full width on smaller screens */
+    }
+
+    .carousel-inner {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 1.75rem; /* Adjust heading size */
+        margin: 0 auto;
+    }
+}
+
+/* For large phones and small tablets */
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-inner {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem; /* Reduce caption font size */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* For small phones */
+@media (max-width: 576px) {
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel-inner {
+        height: 200px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem; /* Reduce slide label font size */
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem; /* Reduce caption text size */
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* college hero media queries */
+@media (max-width: 992px) {
+    .clg-hero h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .card {
+        margin: 1rem 2rem; /* Reduce horizontal margin */
+        padding: 1rem;
+    }
+
+    .card p {
+        font-size: 1.2rem; /* Adjust paragraph font size */
+        text-indent: 1rem; /* Reduce text indent */
+    }
+}
+
+/* For large phones and small tablets */
+@media (max-width: 768px) {
+    .clg-hero h1 {
+        font-size: 1.8rem; /* Further reduce heading size */
+    }
+
+    .card {
+        margin: 1rem 1rem; /* Reduce horizontal margin more */
+        padding: 0.8rem;
+    }
+
+    .card p {
+        font-size: 1.1rem; /* Further adjust font size */
+    }
+}
+
+/* For small phones */
+@media (max-width: 576px) {
+    .clg-hero h1 {
+        font-size: 1.5rem; /* Make heading smaller for small screens */
+    }
+
+    .card {
+        margin: 0.5rem 0.5rem; /* Minimal margin for small screens */
+        padding: 0.5rem;
+    }
+
+    .card p {
+        font-size: 1rem; /* Small font size for small screens */
+        text-indent: 0.5rem; /* Minimal indent */
+    }
+}
+
+/* Scrolling card  media queries */
+@media (max-width: 768px) {
+    .card-one, .card-two {
+        flex: 1 1 100%; /* Make each card take up the full width */
+        padding: 0;
+    }
+
+    .cardzz {
+        width: 70vh; /* Full width for the card */
+        height: 300px;
+    }
+
+    .card-details ul {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cardzz {
+        width: 100%; /* Full width for the card */
+        height: 300px;
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .card-details ul {
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+
+/* Video section media queries */
+
+/* Medium screen (tablets) */
+@media (max-width: 1024px) {
+    iframe {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+/* Small screen (large mobile devices) */
+@media (max-width: 768px) {
+    iframe {
+        width: 80vw;
+        height: 45vh;
+    }
+}
+
+/* Extra small screen (smaller mobile devices) */
+@media (max-width: 480px) {
+    iframe {
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+/* Portrait mobile (very small devices like small smartphones) */
+@media (max-width: 320px) {
+    iframe {
+        width: 90vw;
+        height: 35vh;
+    }
+}
+
+/* Footer media queries */
+@media (max-width:768px)
+{
+    .quick-links{
+        display:none;
+    }
+}
+@media (max-width:480px)
+{
+    .footer-left,.footer-right
+    {
+        display: none;
+    }
+}
+
+@media (max-width:768px)
+{
+    .change-chapters
+    {
+        width:60%;
+        height:30vh;
+        padding:2vw;
+    }
+    .chapters
+    {
+        width:60%;
+    }
+    .chapter-content
+    {
+        font-size: 1em;
+    }
+    footer
+    {
+        height:400px;
+    }
+
+}
+@media (max-width:1200px)
+{
+    .quick-links
+    {
+        display:none;
+    }
+
+}
+
+/* ann buttons media queries */
+
+@media screen and (max-width: 768px) {
+    .announcements {
+        top: 8rem; /* Adjust position for smaller screens */
+        left: 1rem; /* Adjust position for smaller screens */
+    }
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4 {
+        width: 3rem; /* Reduce size */
+        height: 3rem;
+        font-size: 1.5rem; /* Adjust font size */
+        margin: 1rem 0 0 0; /* Adjust spacing */
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .announcements {
+        top: 6rem; /* Adjust position for smaller screens */
+        left: 0.5rem; /* Adjust position for smaller screens */
+    }
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4 {
+        width: 2.5rem; /* Further reduce size */
+        height: 2.5rem;
+        font-size: 1.2rem; /* Further adjust font size */
+        margin: 0.8rem 0 0 0; /* Adjust spacing */
+    }
+}
+
+/* For very small screens (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .announcements {
+        top: 4rem; /* Adjust position for smaller screens */
+        left: 0.3rem; /* Adjust position for smaller screens */
+    }
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4 {
+        width: 2rem; /* Smallest size */
+        height: 2rem;
+        font-size: 1rem; /* Smallest font size */
+        margin: 0.5rem 0 0 0; /* Tight spacing */
+    }
+}
+
+
+/* Table media queries */
+@media (max-width:900px)
+{
+    .table-class{
+        display: none;
+    }
+}
+@media (max-width:830px)
+{
+    .footer-left,.footer-right
+    {
+        display:none;
+    }
+}
+
+/* Announcement boxes media queries */
+@media (max-width: 1024px) {
+    #ann-box,
+    #chart-box,
+    #company-box,
+    #form-box {
+        height: 60vh;
+        width: 40vw;
+        top: 20%;
+        left: 30%;
+    }
+
+    #ann-box li a,
+    #form-box li a,
+    #chart-box li a,
+    #company-box li a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #ann-box,
+    #chart-box,
+    #company-box,
+    #form-box {
+        height: 55vh;
+        width: 50vw;
+        top: 22%;
+        left: 25%;
+    }
+
+    #ann-box li a,
+    #form-box li a,
+    #chart-box li a,
+    #company-box li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #ann-box,
+    #chart-box,
+    #company-box,
+    #form-box {
+        height: 50vh;
+        width: 90vw;
+        top: 25%;
+        left: 5%;
+    }
+
+    #ann-box li a,
+    #form-box li a,
+    #chart-box li a,
+    #company-box li a {
+        font-size: 1rem;
+    }
+}
